@@ -8,7 +8,7 @@
 <script>
 	$(document).ready(function(){
 		var url = getQueryParam(1);
-		window.location.href = url;
+		window.location.href = decodeURIComponent(url);
 	});
 	
 	function getQueryVariable(variable) {
